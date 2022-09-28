@@ -46,21 +46,12 @@ html, body {
   }
   .card-img {
     max-width: 50%;
-    min-height: 100%;
-    display: flex;
   }
   .card-img-desk {
     max-width: 100%;
     object-fit: contain; 
  
   }
-  .card-img-mobile {
-    visibility: hidden;
-    max-width: 0;
-    max-height: 0;
-    
-  }
-  
   .card-content {
     max-width: 50%;
     padding: 30px;
