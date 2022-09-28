@@ -1,0 +1,126 @@
+:root {
+    --xdk-blue:hsl(212, 21%, 14%);
+    --dk-gray-blue:hsl(228, 12%, 48%);
+    --white:hsl(0, 0%, 100%);
+    --dk-cyan:hsl(158, 36%, 37%);
+    --cream:hsl(30, 38%, 92%);
+    
+    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /*remove default margin*/
+  * {
+    margin: 0;
+  }
+  /*
+  Allow percentage-based heights in the application
+*/
+html, body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    background: var(--cream);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+  }
+
+  .card {
+    max-width: 650px;
+    background: var(--white);
+    display: flex;
+
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .card-img {
+    max-width: 50%;
+    min-height: 100%;
+    display: flex;
+  }
+  .card-img-desk {
+    max-width: 100%;
+    object-fit: contain; 
+ 
+  }
+  .card-img-mobile {
+    visibility: hidden;
+    max-width: 0;
+    max-height: 0;
+    
+  }
+  
+  .card-content {
+    max-width: 50%;
+    padding: 30px;
+  }
+
+  header p {
+    letter-spacing: 6px;
+    font-size: 15px;
+    color: var(--dk-gray-blue);
+    font-family: 'Montserrat', sans-serif;
+  }
+  header h2 {
+    padding: 15px 0;
+    font-size: 40px;
+    line-height: 1;
+    font-family: 'Fraunces', serif; 
+  }
+  
+  .card-content > p {
+    padding-top: 10px;
+    color: var(--dk-gray-blue);
+    font-size: 18px;
+    opacity: 0.9;
+  }
+
+  .card-content div{
+ display: flex;
+ padding: 20px 0;
+
+ font-family:'Fraunces', serif; 
+  }
+  .price {
+    
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--dk-cyan);
+
+    margin-right: 10%;
+  }
+  .card-content div p:last-of-type{
+    text-decoration: line-through;
+    align-self: center;
+    color: var(--dk-gray-blue);
+  }
+
+  button {
+    width: 100%;
+    min-height: 12%;
+
+    border: none;
+    border-radius: 8px;
+
+    color: var(--white);
+    background: var(--dk-cyan);
+
+    font-weight: 600;
+    font-size: 16px;
+
+  }
+  button img {
+    margin-right: 8%;
+  }
+
